@@ -3,7 +3,7 @@ package edu.trinity;
 public class Fibonacci {
     public int fibonacci(int pos) {
         if (pos < 0) {
-            return -1;
+            throw new IllegalArgumentException("Position cannot be a negative number.");
         }
         if (pos == 0) return 0;
 
